@@ -13,7 +13,7 @@
     "mocha": "^4.0.1"
   },
   "scripts": {
-    "test": "mkdir -p report &&  ./node_modules/.bin/mocha --recursive -R xunit test/ > report/test-reports.xml",
+    "test": "mkdir -p report &&  ./node_modules/.bin/mocha --recursive -R xunit test/",
     "start": "node application.js"
   },
   "author": "",
