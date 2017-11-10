@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.16.2"
+    "chai": "^4.1.2",
+    "express": "^4.16.2",
+    "mocha": "^4.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mkdir -p report &&  ./node_modules/.bin/mocha --recursive -R xunit test/ > report/test-reports.xml",
     "start": "node application.js"
   },
   "author": "",
